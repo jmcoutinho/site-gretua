@@ -14,9 +14,9 @@ links.forEach(function(l){
 	l.style.width = larguraInstagram + 'px';
 });
 
-document.onmousemove = function(e){
-	var x = e.clientX;
-	var y = e.clientY;
-	
-	document.getElementById('andaime').style.clipPath = 'circle(50px at ' + x + 'px ' + y + 'px)';
-};
+//document.onmousemove = function(e){
+//	var x = e.clientX;
+//	var y = e.clientY;
+//	
+//	document.getElementById('andaime').style.clipPath = 'circle(50px at ' + x + 'px ' + y + 'px)';
+//};
