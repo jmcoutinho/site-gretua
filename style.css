@@ -1,0 +1,119 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+a:before {content: '[';}
+a:after {content: ']';}
+
+.seccao, #cabecalho p, #cabecalho div {
+	margin: 4em 0;
+}
+
+.legenda, #cabecalho, #rodape, .designacao, .data, .hora {
+	text-transform: uppercase;
+}
+
+.barra {
+	display: flex;
+	justify-content: center;
+	margin: 2em 0;
+}
+
+.espaco {
+	margin: 0 1em;
+}
+
+.area {
+	display: inline-block;
+	width: 16em;
+	height: 9em;
+}
+
+.conteudo {
+	display: inline-block;
+	width: inherit;
+	height: inherit;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.conteudo {
+	font-size: .8rem;
+}
+
+.evento {
+	margin: 1em .5em;
+}
+.evento:first-child {margin-top: .5em;}
+.evento:last-child {margin-bottom: .5em;}
+
+.designacao, .data, .hora {
+	display: inline-block;
+}
+
+.designacao:after, .data:after {
+	content: ' /';
+}
+
+.legenda, .conteudo {
+	font-family: Helvetica, Sans-serif;
+}
+
+.legenda, .designacao, .data, .hora {
+	font-size: .5rem;
+}
+
+.legenda p {
+	margin: .5em 0;
+}
+
+.mira {
+	position: relative;
+}
+.mira:before, .mira:after {
+	position: absolute;
+	left: -2.5px;
+	content: '';
+	height: 1px;
+	width: 5px;
+	background: black;
+}
+.mira:before {transform: rotate(90deg);}
+.mira.esq {left: 0;}
+.mira.dta {left: 16em;}
+.mira.inf {top: 9em;}
+
+#cabecalho {
+	text-align: center;
+}
+
+#cabecalho .texto-link, #rodape a, #rodape img {
+	font-size: .667rem;
+}
+
+#agenda .legenda {
+	text-align: left;
+}
+
+#espaco-gretua .legenda {
+	text-align: center;
+}
+
+#ao-vidro .legenda {
+	text-align: right;
+}
+
+#links a {margin: 0 4rem;}
+#institucional img {margin: 0 2rem;}
+
+#andaime {
+	background: url(materiais/andaime.svg) no-repeat;
+    background-size: 100%;
+    background-position: 0 -410px;
+    width: 99vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+	border: yellow;
+}
