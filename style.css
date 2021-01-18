@@ -1,6 +1,7 @@
 a {
 	text-decoration: none;
 	color: black;
+	cursor: pointer;
 }
 a:before {content: '[';}
 a:after {content: ']';}
@@ -87,7 +88,7 @@ a:after {content: ']';}
 	text-align: center;
 }
 
-#cabecalho .texto-link, #rodape a, #rodape img {
+#cabecalho .texto-link, #rodape {
 	font-size: .667rem;
 }
 
@@ -95,7 +96,7 @@ a:after {content: ']';}
 	text-align: left;
 }
 
-#espaco-gretua .legenda {
+#espaco-gretua .legenda, #contactos {
 	text-align: center;
 }
 

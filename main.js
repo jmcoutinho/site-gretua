@@ -14,6 +14,17 @@ links.forEach(function(l){
 	l.style.width = larguraInstagram + 'px';
 });
 
+function abrirFechar(e) {
+	var v = document.getElementById(e);
+	if(v.style.display == 'none') {
+		v.style.display = 'block';
+		v.style.height = '50px';
+	} else {
+		v.style.display = 'none';
+		v.style.height = 0;
+	}
+};
+
 //document.onmousemove = function(e){
 //	var x = e.clientX;
 //	var y = e.clientY;
