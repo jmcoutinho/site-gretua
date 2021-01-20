@@ -28,6 +28,8 @@ a:after {content: ']';}
 	display: inline-block;
 	width: 16em;
 	height: 9em;
+	border: 5px solid transparent;
+	border-image: url(materiais/mira.png) 100 round;
 }
 
 .conteudo {
@@ -65,9 +67,10 @@ a:after {content: ']';}
 }
 
 .legenda p {
-	margin: .5em 0;
+	margin: 1em 0;
 }
 
+/*
 .mira {
 	position: relative;
 }
@@ -77,12 +80,13 @@ a:after {content: ']';}
 	content: '';
 	height: 1px;
 	width: 5px;
-	background: black;
+	background: red;
 }
 .mira:before {transform: rotate(90deg);}
 .mira.esq {left: 0;}
 .mira.dta {left: 16em;}
 .mira.inf {top: 9em;}
+*/
 
 #cabecalho {
 	text-align: center;
