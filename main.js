@@ -35,3 +35,13 @@ function abrirFechar(e) {
 //	
 //	document.getElementById('andaime').style.clipPath = 'circle(50px at ' + x + 'px ' + y + 'px)';
 //};
+
+//ALTURA ANDAIME
+var alturaSite;
+if (document.body.clientHeight > window.innerHeight) {
+	alturaSite = document.body.clientHeight;
+} else {
+	alturaSite = window.innerHeight;
+}
+
+document.getElementById('andaime').style.height = alturaSite + 'px';

@@ -70,24 +70,6 @@ a:after {content: ']';}
 	margin: 1em 0;
 }
 
-/*
-.mira {
-	position: relative;
-}
-.mira:before, .mira:after {
-	position: absolute;
-	left: -2.5px;
-	content: '';
-	height: 1px;
-	width: 5px;
-	background: red;
-}
-.mira:before {transform: rotate(90deg);}
-.mira.esq {left: 0;}
-.mira.dta {left: 16em;}
-.mira.inf {top: 9em;}
-*/
-
 #cabecalho {
 	text-align: center;
 }
@@ -104,6 +86,9 @@ a:after {content: ']';}
 	text-align: center;
 }
 
+#ao-vidro a:before { content: none; }
+#ao-vidro a:after { content: none; }
+
 #ao-vidro .legenda {
 	text-align: right;
 }
@@ -116,9 +101,33 @@ a:after {content: ']';}
     background-size: 100%;
     background-position: 0 -410px;
     width: 99vw;
-    height: 100vh;
     position: absolute;
     top: 0;
+	left: 0;
     z-index: -1;
-	border: yellow;
+}
+
+@media screen and (max-width: 900px)  {
+	.espaco {
+		width: min-content;
+		margin: 0 auto;
+	}
+	
+	#corpo {
+		flex-direction: column;
+	}
+	
+	#agenda .legenda, #ao-vidro .legenda {
+		text-align: center;
+	}
+	
+	#links a {
+		margin: 0 2em;
+	}
+	
+	#andaime {
+		background-size: 300%;
+		background-position: center;
+		width: 100vw;
+	}
 }
