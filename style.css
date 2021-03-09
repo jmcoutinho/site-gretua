@@ -6,6 +6,11 @@ a {
 a:before {content: '[';}
 a:after {content: ']';}
 
+::selection {
+	color: yellow;
+	background: hsl(0, 0%, 87%);
+}
+
 .seccao, #cabecalho p, #cabecalho div {
 	margin: 4em 0;
 }
