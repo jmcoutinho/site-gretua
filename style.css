@@ -35,6 +35,7 @@ a:after {content: ']';}
 	height: 9em;
 	border: 5px solid transparent;
 	border-image: url(materiais/mira.png) 100 round;
+	-webkit-border-image: url(materiais/mira.png) 100 round;
 }
 
 .conteudo {
