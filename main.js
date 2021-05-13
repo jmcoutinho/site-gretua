@@ -45,3 +45,14 @@ if (document.body.clientHeight > window.innerHeight) {
 }
 
 document.getElementById('andaime').style.height = alturaSite + 'px';
+
+
+//AO VIDRO MARGARIDA FERREIRA
+window.onload = imgAleatoria;
+
+var gifs = new Array("materiais/ao-vidro/margarida-ferreira/cubo-pixel.gif","materiais/ao-vidro/margarida-ferreira/espelho-pixel.gif","materiais/ao-vidro/margarida-ferreira/rotina-pixel.gif");
+
+function imgAleatoria() {
+     var numAleatorio = Math.floor(Math.random() * gifs.length);
+     document.getElementById("vidro-margarida").src = gifs[numAleatorio];
+}
