@@ -92,8 +92,8 @@ a:after {content: ']';}
 	text-align: center;
 }
 
-#ao-vidro a:before { content: none; }
-#ao-vidro a:after { content: none; }
+/*#ao-vidro a:before { content: none; }
+#ao-vidro a:after { content: none; }*/
 
 #ao-vidro .legenda {
 	text-align: right;
