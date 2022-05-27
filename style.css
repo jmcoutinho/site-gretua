@@ -1,139 +1,18 @@
-a {
-	text-decoration: none;
-	color: black;
-	cursor: pointer;
-}
-a:before {content: '[';}
-a:after {content: ']';}
-
-::selection {
-	color: yellow;
-	background: hsl(0, 0%, 87%);
-}
-
-.seccao, #cabecalho p, #cabecalho div {
-	margin: 4em 0;
-}
-
-.legenda, #cabecalho, #rodape, .designacao, .data, .hora {
+body {
+	font: 30px Helvetica, sans-serif;
 	text-transform: uppercase;
+	background: black;
 }
 
-.barra {
-	display: flex;
-	justify-content: center;
-	margin: 2em 0;
-}
-
-.espaco {
-	margin: 0 1em;
-}
-
-.area {
-	display: inline-block;
-	width: 16em;
-	height: 9em;
-	border: 5px solid transparent;
-	border-image: url(materiais/mira.png) 100 round;
-	-webkit-border-image: url(materiais/mira.png) 100 round;
-}
-
-.conteudo {
-	display: inline-block;
-	width: inherit;
-	height: inherit;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-
-.conteudo {
-	font-size: .8rem;
-}
-
-.evento {
-	margin: 1em .5em;
-}
-.evento:first-child {margin-top: .5em;}
-.evento:last-child {margin-bottom: .5em;}
-
-.designacao, .data, .hora {
-	display: inline-block;
-}
-
-.designacao:after, .data:after {
-	content: ' /';
-}
-
-.legenda, .conteudo {
-	font-family: Helvetica, Sans-serif;
-}
-
-.legenda, .designacao, .data, .hora {
-	font-size: .5rem;
-}
-
-.legenda p {
+p, a {
 	margin: 1em 0;
+	color: white;
 }
 
-#cabecalho {
+.centrao {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
-}
-
-#cabecalho .texto-link, #rodape {
-	font-size: .667rem;
-}
-
-#agenda .legenda {
-	text-align: left;
-}
-
-#espaco-gretua .legenda, #contactos {
-	text-align: center;
-}
-
-/*#ao-vidro a:before { content: none; }
-#ao-vidro a:after { content: none; }*/
-
-#ao-vidro .legenda {
-	text-align: right;
-}
-
-#links a {margin: 0 4rem;}
-#institucional img {margin: 0 2rem;}
-
-#andaime {
-	background: url(materiais/andaime.svg) no-repeat;
-    background-size: 100%;
-    background-position: 0 -410px;
-    width: 99vw;
-    position: absolute;
-    top: 0;
-	left: 0;
-    z-index: -1;
-}
-
-@media screen and (max-width: 900px)  {
-	.espaco {
-		width: min-content;
-		margin: 0 auto;
-	}
-	
-	#corpo {
-		flex-direction: column;
-	}
-	
-	#agenda .legenda, #ao-vidro .legenda {
-		text-align: center;
-	}
-	
-	#links a {
-		margin: 0 2em;
-	}
-	
-	#andaime {
-		background-size: 300%;
-		background-position: center;
-		width: 100vw;
-	}
+	height: 90vh;
 }
